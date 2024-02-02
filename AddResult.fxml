@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="615.0" prefWidth="708.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CgpaCalculator.AddResultController">
+   <children>
+      <AnchorPane prefHeight="620.0" prefWidth="711.0" style="-fx-background-color: #271e7d;">
+         <children>
+            <AnchorPane prefHeight="125.0" prefWidth="711.0" style="-fx-background-color: #097d26;">
+               <children>
+                  <Text layoutX="256.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Result Page">
+                     <font>
+                        <Font name="Arial Black" size="30.0" />
+                     </font>
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.9210526347160339" green="0.9210526347160339" blue="0.9210526347160339" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <Text fill="WHITE" layoutX="60.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Name">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="66.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="80.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Session">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="Name" layoutX="156.0" layoutY="151.0" prefHeight="32.0" prefWidth="313.0" promptText="Enter Name" />
+            <TextField fx:id="ID" layoutX="156.0" layoutY="202.0" prefHeight="32.0" prefWidth="313.0" promptText="Enter ID" />
+            <TextField fx:id="Session" layoutX="156.0" layoutY="252.0" prefHeight="32.0" prefWidth="313.0" promptText="Enter Session" />
+            <Text fill="WHITE" layoutX="50.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semester No">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+            </Text>
+            <TextField fx:id="Semester" layoutX="156.0" layoutY="303.0" prefHeight="32.0" prefWidth="313.0" promptText="Enter Semester No" />
+            <Text fill="#fffdfd" layoutX="46.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subject code">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+            </Text>
+            <TextField fx:id="Subject" layoutX="156.0" layoutY="357.0" prefHeight="32.0" prefWidth="313.0" promptText="Enter subject code" />
+            <Text fill="WHITE" layoutX="96.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Credit">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+            </Text>
+            <TextField fx:id="Creadit" layoutX="156.0" layoutY="409.0" prefHeight="32.0" prefWidth="313.0" promptText="Enter subject creadit" />
+            <Text fill="WHITE" layoutX="99.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grade" wrappingWidth="46.5625">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+            </Text>
+            <TextField fx:id="Grade" layoutX="156.0" layoutY="465.0" prefHeight="32.0" prefWidth="313.0" promptText="Enter subject Grade" />
+            <Button layoutX="263.0" layoutY="518.0" mnemonicParsing="false" onAction="#resultAction" text="Submit">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
